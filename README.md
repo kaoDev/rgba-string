@@ -12,7 +12,8 @@ npm install rgba-string --save
 ```
 
 ES6, CommonJS, and UMD builds are available with each distribution.
-For example:
+
+example:
 
 ```js
 import { rgba } from 'rgba-string'

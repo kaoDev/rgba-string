@@ -1,6 +1,6 @@
 {
   "name": "rgba-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "generate rgba color strings",
   "main": "dist/commonjs/index.js",
   "module": "dist/es/index.js",
