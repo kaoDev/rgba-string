@@ -1,10 +1,11 @@
 {
   "name": "rgba-string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "generate rgba color strings",
   "main": "dist/commonjs/index.js",
   "module": "dist/es/index.js",
   "jsnext:main": "dist/es/index.js",
+  "files": ["dist"],
   "types": "./dist/es/main.d.ts",
   "repository": "https://github.com/kaoDev/rgba-string.git",
   "author": "kaoDev",
@@ -25,5 +26,7 @@
     "rimraf": "^2.6.1",
     "typescript": "^2.4.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "rgba-string": "^1.0.2"
+  }
 }
