@@ -1,0 +1,29 @@
+{
+  "name": "rgba-string",
+  "version": "1.0.1",
+  "description": "generate rgba color strings",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/es/index.js",
+  "jsnext:main": "dist/es/index.js",
+  "types": "./dist/es/main.d.ts",
+  "repository": "https://github.com/kaoDev/rgba-string.git",
+  "author": "kaoDev",
+  "license": "MIT",
+  "keywords": ["typescript", "rgba", "color"],
+  "scripts": {
+    "build": "npm run build:commonjs && npm run build:es && npm run build:umd",
+    "build:commonjs": "npm run clean:commonjs && tsc --strict -t ES5 -m commonjs --outDir dist/commonjs",
+    "build:es": "npm run clean:es && tsc -d --strict -t ES2015 -m ES2015 --outDir dist/es",
+    "build:umd": "npm run clean:umd && tsc --strict -t ES5 -m umd --outDir dist/umd",
+    "clean": "npm run clean:commonjs && npm run clean:es && npm run clean:umd",
+    "clean:commonjs": "rimraf dist/commonjs",
+    "clean:es": "rimraf dist/es",
+    "clean:umd": "rimraf dist/umd",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {}
+}
